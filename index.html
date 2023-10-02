@@ -27,6 +27,63 @@
 
         </div>
         <div class="nav_div">
+
+          
+          <div class="trial">
+            <STYLE>
+              .dropbtn {
+                border: none;
+                cursor: pointer;
+              }
+              
+              .dropdown {
+                position: relative;
+              }
+              
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #717171;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                margin-left: -11vh;
+              }
+    
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+                .show-menu {display: block;}
+              
+            </STYLE>
+            <script>
+              /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show-menu");
+              }
+
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-menu')) {
+                      openDropdown.classList.remove('show-menu');
+                    }
+                  }
+                }
+              }
+              </script>
+          </div>
+
+
             <div class="item1">
               <div class="login1">
                 <a href="/#loggin"><img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/202b4fe5-b5e4-46dd-30ae-7589b7f51d00/height=60" alt="Log in button" title="Click to log in" height="30vw"></a>
@@ -37,10 +94,14 @@
             </div>
             <div class="item2">
               <div class="menu1">
-                <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/c2337f05-5b9a-44fb-ed54-2b6a3f92d300/width=64" alt="Navigation Menu" title="Show menu" height="30vw" width="30vw">
+                <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/c2337f05-5b9a-44fb-ed54-2b6a3f92d300/width=64" alt="Navigation Menu" title="Show menu" height="30vw" width="30vw" onclick="myFunction()" class="dropbtn">
               </div>
               <div class="menu2">
-                <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/8cb48760-3782-4e6b-3d9e-b996ec2b2000/width=64" alt="Navigation Menu" title="Show menu" height="30vw" width="30vw">
+                <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/8cb48760-3782-4e6b-3d9e-b996ec2b2000/width=64" alt="Navigation Menu" title="Show menu" height="30vw" width="30vw" onclick="myFunction()" class="dropbtn">
+              </div>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#drinks">Drinks</a>
+                <a href="#food">Food</a>
               </div>
             </div>
         </div>
@@ -57,11 +118,8 @@
       </div>
       <div style="text-align: left;">
         <h2>
-          Menu (To be added to nav menu))
-        </h2>
-        Drinks<br>
-        Snacks and Bites<br>
-        Item C
+          <u>Menu</u>
+        </h1>
         <div id="drinks">
           <h2>
             Drinks
