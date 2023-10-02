@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/2f5e2247-6e71-4815-b9e3-a393f35fbc00/width=180">
   
     <link rel="stylesheet" as="style" onload="this.rel = 'stylesheet'" href="http://sepideh.coffee/assets/mainstyle.css">    
+    <link rel="stylesheet" as="style" onload="this.rel = 'stylesheet'" href="http://sepideh.coffee/assets/nav.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sepideh Coffee</title>
   </head>
@@ -27,63 +28,6 @@
 
         </div>
         <div class="nav_div">
-
-          
-          <div class="trial">
-            <STYLE>
-              .dropbtn {
-                border: none;
-                cursor: pointer;
-              }
-              
-              .dropdown {
-                position: relative;
-              }
-              
-              .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #717171;
-                min-width: 160px;
-                overflow: auto;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-                margin-left: -11vh;
-              }
-    
-              .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-              }
-                .show-menu {display: block;}
-              
-            </STYLE>
-            <script>
-              /* When the user clicks on the button, 
-              toggle between hiding and showing the dropdown content */
-              function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show-menu");
-              }
-
-              // Close the dropdown if the user clicks outside of it
-              window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
-                  var dropdowns = document.getElementsByClassName("dropdown-content");
-                  var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show-menu')) {
-                      openDropdown.classList.remove('show-menu');
-                    }
-                  }
-                }
-              }
-              </script>
-          </div>
-
-
             <div class="item1">
               <div class="login1">
                 <a href="/#loggin"><img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/202b4fe5-b5e4-46dd-30ae-7589b7f51d00/height=60" alt="Log in button" title="Click to log in" height="30vw"></a>
@@ -141,5 +85,26 @@
         </div>      
       </div>
     </div>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show-menu");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show-menu')) {
+              openDropdown.classList.remove('show-menu');
+            }
+          }
+        }
+      }
+      </script>
   </body>
 </html>
